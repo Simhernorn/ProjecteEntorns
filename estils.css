@@ -1,0 +1,155 @@
+* {	
+  margin:0px;
+  padding:0px;
+}
+html{
+  font-family:arial;
+}
+#wrapper{
+	padding:10px;
+}
+#cap {
+  display: block;
+  width: 80%;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #999999;
+  background-color:#CCC;
+ 
+}
+#principal {
+  display: block;
+  width: 70%;
+  margin: 50px auto;
+  padding: 15px;
+  text-align: justify;
+  border: 1px solid #999999;
+  background: #DDDDDD;
+}
+#principal h2{
+  margin:10px auto;
+  border:solid 1px black;
+  background-color:aquamarine;
+  width:60%;
+  text-align:center;
+  padding:10px;
+}
+#titol {
+  font: bold 36px verdana, sans-serif;
+}
+#peu {
+  display: block;
+  width: 80%;
+  margin: 50px auto;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #999999;
+  background: #DDDDDD;
+}
+#formulari{
+  width:80%;
+  margin:10px auto;
+}
+p {
+  width: 80%;
+  margin: 10px auto;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #999999;
+  background: #FFF;
+
+}
+h1{
+  width: 500px;
+  margin: 10px auto;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #999999;
+  font-size:30px;
+  font-family:arial;
+  color:white;
+  background: #DD2200;
+}
+
+.filaformulari{
+  padding:15px;
+  margin:10px auto;
+  border: solid 2px black;
+  background-color:rgb(206, 246, 244);
+  text-align: center;
+}
+
+textarea{
+  vertical-align: middle;
+
+}
+input[type="checkbox"]{
+  margin-right:10px;
+}
+input[type="radio"]{
+  margin-right:10px;
+}
+select{
+  padding:5px;
+}
+input[type="submit"],input[type="reset"]{
+  padding:10px;
+}
+button[type="submit"],button[type="reset"]{
+  padding:10px;
+}
+#enviament{
+  border-radius: 100%;
+  padding:0;
+}
+button[type="submit"] img{
+  width:50px;
+  vertical-align: middle;
+}
+/* ordenació */
+
+fieldset{
+ border:solid 3px red;
+ background-color: yellow;
+ padding:10px;
+ margin:10px auto;
+}
+
+legend{
+  padding:5px;
+  border: solid 1px red;
+  color:white;
+  font-size: 1.2em;
+  font-weight: bold;;
+  border-radius:10px;
+  background-color:red;
+}
+input[type="image"]{
+  width:50px;
+  vertical-align: middle;
+  border:solid 2px black;
+  border-radius:30px;
+}
+input[type="checkbox"],input[type="radio"]{
+  margin:5px;
+}
+#principal p:nth-child(2n){
+  background-color:#ecf8ec;
+}
+
+#principal p span.nomCamp{
+  font-weight: bold;
+  font-size:1.2em;
+  text-decoration:underline;
+}
+
+#principal p.enrere{
+  text-align:center;
+}
+
+#principal p.enrere a:hover{
+  color:red;
+  text-decoration: none;
+}

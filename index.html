@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+	<meta charset="utf-8">
+	<title>Formulari</title>
+	<link rel="stylesheet" href="estils.css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<header id="cap">
+			<h1 id="titol">Formulari</h1>
+		</header>
+		<main id="principal">
+			<form id="formulari" method="post" action="processaformulari.php" enctype="multipart/form-data">
+				<!-- enctype="multipart/form-data" , per poder treballar amb fitxers -->
+				<input type="hidden" name="creador" value="alumne@simarro.org"><!-- no es mostra en la pàgina, però s'envia igualment-->
+
+				<fieldset>
+					<legend>Dades Personals</legend>
+					<div class="filaformulari">
+						<label for="nom">Nom:</label>
+						<input type="text" id="nom" name="nom" size="30" maxlength="50">
+					</div>
+					<div class="filaformulari">
+						<label for="cognoms">Cognoms:</label>
+						<input type="text" id="cognoms" name="cognoms" size="30" maxlength="70">
+					</div>
+					<div class="filaformulari">
+						<label for="contrasenya">Contrasenya:</label>
+						<input type="password" id="contrasenya" name="contrasenya" size="30" maxlength="50">
+					</div>
+					<div class="filaformulari">
+						<label for="poblacio">Població:</label>
+						<input type="text" id="poblacio" name="poblacio" size="30" maxlength="50">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Contacte</legend>
+					<div class="filaformulari">
+						<label for="email">E-mail:</label>
+						<input type="text" id="email" name="email" size="30" maxlength="50">
+					</div>
+					<div class="filaformulari">
+						<label for="telefon">Telèfon:</label>
+						<input type="text" id="telefon" name="telefon" size="30" maxlength="50">
+					</div>
+
+				</fieldset>
+				<fieldset>
+					<legend>Estudis</legend>
+					<div class="filaformulari">
+						Estudis:
+						<label for="eso">ESO</label><input type="checkbox" name="estudis[]" id="eso" value="eso">
+						<label for="batxillerat">Batxillerat</label><input type="checkbox" name="estudis[]" id="batxillerat"
+								value="batxillerat">
+						<label for="graumitja">FP Mitjà</label>
+							<input type="checkbox" name="estudis[]" id="graumitja" value="graumitja">
+						<label for="grausuperior">FP Superior</label>
+						<input type="checkbox" name="estudis[]" id="grausuperior"	value="grausuperior">
+						<!-- en checkbox múltiple, cal enviar en name un array estudis[] no només estudis, són acumulatius -->
+					</div>
+					<div class="filaformulari">
+						Horari:
+						<label for="mati">Matí</label><input type="radio" name="horari" id="mati" value="mati">
+						<label for="vesprada">Vesprada</label><input type="radio" name="horari" id="vesprada" value="vesprada">
+						<!-- en radio, sí que es pot ficar el mateix valor en name, són excloents -->
+					</div>
+					<div class="filaformulari">
+						<label for="familia">Família:</label>
+						<select id="familia" name="familia">
+							<option value="informatica" selected>
+								Informàtica i Comunicacions
+							</option>
+							<option value="comerç">Comerç i Màrqueting</option>
+							<option value="administracio">Administració i Gestió</option>
+							<option value="optica">Òptica</option>
+							<option value="turisme">Turisme</option>
+						</select>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Informació</legend>
+					<div class="filaformulari">
+						<label for="fitxer">Fitxer:</label>
+						<input type="file" name="fitxer" id="fitxer">
+					</div>
+
+					<div class="filaformulari">
+						<label for="comentaris">Comentaris:</label>
+						<textarea id="comentaris" name="comentaris" rows="10" cols="40">Escriu ací...</textarea>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Control</legend>
+					<div class="filaformulari">
+						<input type="reset" value="Reset">
+						<input type="submit" id="submit" value="Enviar">
+						<!-- el plugin recomana button en lloc d'input, però és igualment vàlid -->
+						<input type="image" name="fitxerimatge" src="enviar.png" alt="Imatge Submit">
+						<!--button type="submit" id="enviament"><img src="enviar.png" alt="Imatge Submit"></button-->
+						<!--button type="reset">Reset</button>
+						<button type="submit" id="submit" value="Enviar">Enviar</button-->
+					</div>
+				</fieldset>
+
+			</form>
+
+		</main>
+		<footer id="peu">
+			<p>
+				IES Dr. Lluís Simarro<br>
+				DAM<br>
+				Llenguatges de marques<br>
+				Curs 25/26
+			</p>
+		</footer>
+	</div>
+</body>
+
+</html>
